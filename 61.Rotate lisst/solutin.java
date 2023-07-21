@@ -7,7 +7,7 @@ class Solution {
         ListNode tail = head;
         for (; tail.next != null; tail = tail.next)
             ++length;
-        tail.next = head; // Circle the list
+        tail.next = head;
 
         final int t = length - k % length;
         for (int i = 0; i < t; ++i)
